@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Nunito, Times, serif;
+    outline: none;
+}
+.sidebar {
+    background-color: #5DC560;
+    white-space: nowrap;
+    flex-shrink: 0;
+    height: 100vh;
+}
+.bgColor{
+    background-color: #5DC560 !important;
+}
+.txt{
+    color: white;
+}
