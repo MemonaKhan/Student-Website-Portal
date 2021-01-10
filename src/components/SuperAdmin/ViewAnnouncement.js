@@ -13,7 +13,7 @@ const ViewAnnouncement = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/principal/announcement/edit');
+    history.push('/superAdmin/announcement/edit');
     // console.log(history.path);
   }
   const data = {
@@ -25,17 +25,17 @@ const ViewAnnouncement = (props) => {
         width: 150
       },
       {
-        label: 'type',
+        label: 'Course',
         field: 'course',
         sort: 'asc',
         width: 150
       },
-      {
-        label: 'post',
-        field: 'school',
-        sort: 'asc',
-        width: 270
-      },
+      // {
+      //   label: 'post',
+      //   field: 'school',
+      //   sort: 'asc',
+      //   width: 270
+      // },
       // {
       //   label: 'Assignment',
       //   field: 'assignment',
@@ -58,20 +58,18 @@ const ViewAnnouncement = (props) => {
     rows: [
       {
         date: '2011/04/25',
-        type: 'Web Development',
-        post: 'Prozameen',
-        action:<><Button variant="danger" onClick={handleShow}  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>
+        course: 'Web Development',
+        // post: 'Prozameen',
+        action:'Classes Soon',
       },
      
      
       {
         date: '2011/04/25',
-        type: 'Web Development',
-        post: 'Prozameen',
+        course: 'Web Development',
+        // post: 'Prozameen',
      
-        action:<><Button variant="danger" onClick={handleShow}  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={'./annoucement/edit'} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:'Classes Soon',
       },
       
      

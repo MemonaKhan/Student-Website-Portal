@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SideBar from './Sidebar'
 
 import Home from "./Home";
-// import AddArticle from './AddArticle';
+import Profile from './Profile'
+import Announcement from './ViewAnnouncement';
 // import Courses from './Courses';
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
@@ -58,8 +59,8 @@ function Main() {
             <div className={classes.toolbar} />
             <Switch>
               <Route exact from="/superAdmin/" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/profile" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/announcement" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/profile" render={props => <Profile {...props} />} />
+              <Route exact from="/superAdmin/announcement" render={props => <Announcement {...props} />} />
               <Route exact from="/superAdmin/article/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/article/type" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/article/view" render={props => <Home {...props} />} />
