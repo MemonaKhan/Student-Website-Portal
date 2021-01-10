@@ -121,7 +121,7 @@ function SideBar(props) {
                             </IconButton>
                     </div>
                     <Divider />
-                    <List className="text-light">
+                    <List className="text-light" style={{width: '30vh'}}>
           {Menu.map((navItem) => {
               const {name, icon, subMenu, onClick} = navItem;
               return(
@@ -130,11 +130,11 @@ function SideBar(props) {
                     (<>
                         <ListItem key={name} button onClick={() =>handleOpen(name)}>
                         <ListItemIcon className="text-light">{icon}</ListItemIcon>
-                            <ListItemText primary={name}/>
+                            <ListItemText primary={name} />
                             {item[name] ? <ExpandMoreIcon /> : <ChevronRightIcon/>}
                         </ListItem>
                         <Collapse in={item[name]} unmountOnExit component="li">
-                            <List className={`bg-white text-dark m-3 shadow rounded ${open? '': 'd-none'}`} disablePadding>
+                            <List className={`  m-3  rounded ${open? '': 'd-none'}`} disablePadding>
                                 {subMenu.map((subItem) => {
                                     const {subItemText, subItemOnClick} = subItem
                                     return(

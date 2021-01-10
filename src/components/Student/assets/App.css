@@ -3,12 +3,14 @@
     margin: 0;
     font-family: Nunito, Times, serif;
     outline: none;
+        font-size: 1rem !important;
 }
 .sidebar {
     background-color: #5DC560;
     white-space: nowrap;
     flex-shrink: 0;
     height: 100vh;
+    width: 500px;
 }
 .bgColor{
     background-color: #5DC560 !important;

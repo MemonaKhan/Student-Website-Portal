@@ -18,6 +18,7 @@ const drawerWidth = 240;
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
+      height:'70px',
     },
     appBarShift: {
       marginLeft: drawerWidth,
@@ -44,6 +45,7 @@ const drawerWidth = 240;
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.enteringScreen,
       }),
+      backgroundColor:'#5DC560'
     },
     drawerClose: {
       transition: theme.transitions.create('width', {
@@ -55,6 +57,7 @@ const drawerWidth = 240;
       [theme.breakpoints.up('sm')]: {
         width: theme.spacing(9) + 1,
       },
+      backgroundColor:'#5DC560'
     },
     toolbar: {
       display: 'flex',
