@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
-import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
+import {Button } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
 
@@ -8,7 +8,7 @@ import { Divider } from '@material-ui/core';
 const ViewResults = (props) => {
   const [show, setShow] = React.useState(false);
 
-  const handleClose = () => setShow(false);
+  // const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const data = {
     columns: [

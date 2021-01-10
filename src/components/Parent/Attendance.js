@@ -1,20 +1,20 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
-import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
+// import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
 
 
 const Attendance = (props) => {
-  const [show, setShow] = React.useState(false);
+  // const [show, setShow] = React.useState(false);
   const { history } = props;
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const handleEdit = () =>{
-    history.push('/Attendance/edit');
-    // console.log(history.path);
-  }
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+  // const handleEdit = () =>{
+  //   history.push('/Attendance/edit');
+  //   // console.log(history.path);
+  // }
   const data = {
     columns: [
       {

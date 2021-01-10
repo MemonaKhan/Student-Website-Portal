@@ -1,29 +1,26 @@
 import React from 'react'
-import {Paper, Grid,TextField, Button,Typography, Divider} from "@material-ui/core"
+import {Paper, Grid,TextField, MenuItem, Button,Typography, Divider} from "@material-ui/core"
 
 
-function AddArticleType(props) {
-    const handleChange=()=>{
-
-    }
+function AddStoryType(props) {
+  const {handleChange} = props
+ 
+    
     return (
       <Grid container >
         <Grid item md={2} xsm={0}/>
         <Grid item md={8} xsm={1} component={Paper}  className="p-5 rounded">
-          <Typography variant="h4" nowrap className="mb-2" align="center">Add Article Type</Typography>
+          <Typography variant="h4" nowrap className="mb-2" align="center">Add Kid Story Type</Typography>
           <Divider /><br />
            <TextField
-           id="article-type"
+           id="story-type"
            variant="outlined"
-           select 
            fullWidth
-           label="Add type"
+           type="text"
+           label="Story Type"
            onChange={handleChange}
-           className="mb-5 mt-5">
-               {/* {types.map(data=>(
-             <MenuItem value="" key={data}>{data}</MenuItem>
-             ))} */}
-           </TextField>
+           className="mb-5 mt-5" />
+           
           <Button className="bgColor text-light" variant="contained">
             Next
           </Button>
@@ -36,4 +33,4 @@ function AddArticleType(props) {
     )
 }
 
-export default AddArticleType
+export default AddStoryType

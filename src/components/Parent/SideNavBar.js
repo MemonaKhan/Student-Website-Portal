@@ -1,18 +1,18 @@
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { ListSubheader, Collapse, Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import {  Collapse, Drawer, AppBar, Toolbar, List, CssBaseline, Typography, Divider, IconButton, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
 import { ExpandLess, ExpandMore, StarBorder, Menu as MenuIcon, ChevronLeft as ChevronLeftIcon, ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faCoffee, faCog, faCogs, faLaughWink, faPencilAlt, faSignOutAlt, faTable, faTachometerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCogs, faLaughWink, faPencilAlt, faSignOutAlt, faTable, faTachometerAlt } from '@fortawesome/free-solid-svg-icons'
 
 
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import MailIcon from '@material-ui/icons/Mail';
+// import DraftsIcon from '@material-ui/icons/Drafts';
+// import SendIcon from '@material-ui/icons/Send';
 
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
@@ -22,7 +22,7 @@ import './assets/css/style.css';
 
 import Img from './img/user.jpg';
 
-import Home from './Home'
+// import Home from './Home'
 import { withRouter } from 'react-router-dom';
 
 
@@ -120,10 +120,10 @@ const SideNavBar = (props) => {
     const theme = useTheme();
     const [open, setOpen] = React.useState(true);
     const [openComplaint, setComplaintOpen] = React.useState(false);
-    const [openTest, setTestOpen] = React.useState(false);
-    const [openFile, setFileOpen] = React.useState(false);
-    const [openNotes, setNotesOpen] = React.useState(false);
-    const [openAssign, setAssignOpen] = React.useState(false);
+    // const [openTest, setTestOpen] = React.useState(false);
+    // const [openFile, setFileOpen] = React.useState(false);
+    // const [openNotes, setNotesOpen] = React.useState(false);
+    // const [openAssign, setAssignOpen] = React.useState(false);
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -134,46 +134,46 @@ const SideNavBar = (props) => {
     };
     const handleAll = () => {
         setComplaintOpen(false);
-        setTestOpen(false);
-        setFileOpen(false);
-        setNotesOpen(false);
-        setAssignOpen(false);
+        // setTestOpen(false);
+        // setFileOpen(false);
+        // setNotesOpen(false);
+        // setAssignOpen(false);
     }
     const handleComplaint = () => {
         setComplaintOpen(!openComplaint);
-        setTestOpen(false);
-        setFileOpen(false);
-        setNotesOpen(false);
-        setAssignOpen(false);
+        // setTestOpen(false);
+        // setFileOpen(false);
+        // setNotesOpen(false);
+        // setAssignOpen(false);
     };
-    const handleTest = () => {
-        setTestOpen(!openTest);
-        setComplaintOpen(false);
-        setFileOpen(false);
-        setNotesOpen(false);
-        setAssignOpen(false);
-    };
-    const handleFile = () => {
-        setFileOpen(!openFile);
-        setComplaintOpen(false);
-        setTestOpen(false);
-        setNotesOpen(false);
-        setAssignOpen(false);
-    };
-    const handleNotes = () => {
-        setNotesOpen(!openNotes);
-        setComplaintOpen(false);
-        setTestOpen(false);
-        setFileOpen(false);
-        setAssignOpen(false);
-    };
-    const handleAssign = () => {
-        setAssignOpen(!openAssign);
-        setComplaintOpen(false);
-        setTestOpen(false);
-        setFileOpen(false);
-        setNotesOpen(false);
-    };
+    // const handleTest = () => {
+    //     setTestOpen(!openTest);
+    //     setComplaintOpen(false);
+    //     setFileOpen(false);
+    //     setNotesOpen(false);
+    //     setAssignOpen(false);
+    // };
+    // const handleFile = () => {
+    //     setFileOpen(!openFile);
+    //     setComplaintOpen(false);
+    //     setTestOpen(false);
+    //     setNotesOpen(false);
+    //     setAssignOpen(false);
+    // };
+    // const handleNotes = () => {
+    //     setNotesOpen(!openNotes);
+    //     setComplaintOpen(false);
+    //     setTestOpen(false);
+    //     setFileOpen(false);
+    //     setAssignOpen(false);
+    // };
+    // const handleAssign = () => {
+    //     setAssignOpen(!openAssign);
+    //     setComplaintOpen(false);
+    //     setTestOpen(false);
+    //     setFileOpen(false);
+    //     setNotesOpen(false);
+    // };
     const handleRoute = (loc) => {
         console.log(history);
         history.push(loc);
@@ -213,7 +213,7 @@ const SideNavBar = (props) => {
                     PARENTS DASHBOARD
                     </Typography>
                     <Button className="navdropdown" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                        Mr. Steven Smith <img src={Img} />
+                        Mr. Steven Smith <img src={Img} alt="ProfileImage" />
                     </Button>
                     <Menu
                         style={{ marginTop: '1.75em' }}

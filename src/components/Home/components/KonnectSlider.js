@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const KonnectSlider = () => {
   const location = useLocation();
   let flag = true;
-  if (location.pathname != '/Home' && location.pathname != '/') {
+  if (location.pathname !== '/Home' && location.pathname !== '/') {
     flag = false;
   }
   return (

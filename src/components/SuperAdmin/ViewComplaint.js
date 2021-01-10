@@ -1,27 +1,27 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
 
-import Image from './img/article.jpg';
+import Image from './img/letter.webp';
 
-import { Button, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
-// import EditArticle from './EditArticle'
+import EditComplaint from './EditComplaint'
 
-const ViewArticle = (props) => {
+const ViewComplaint = (props) => {
   const { history } = props;
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/teacher/article/edit');
+    history.push('/complaint/edit');
     // console.log(history.path);
   }
   const data = {
     columns: [
       {
-        label: 'Article Title',
+        label: 'Complaint Title',
         field: 'title',
         sort: 'asc',
         width: 150
@@ -53,40 +53,40 @@ const ViewArticle = (props) => {
     ],
     rows: [
       { 
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
+        title: 'Regarding New Policy of Fee',
+        image: <img height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
           <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
       },
       {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
+        title: 'Regarding New Policy of Fee',
+        image: <img height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
           <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
       },
       {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
+        title: 'Regarding New Policy of Fee',
+        image: <img height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
           <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
       },
       {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
+        title: 'Regarding New Policy of Fee',
+        image: <img height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
           <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
       },
       {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
+        title: 'Regarding New Policy of Fee',
+        image: <img height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
@@ -98,13 +98,13 @@ const ViewArticle = (props) => {
 
   return (
     <div style={{ backgroundColor: 'white', padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0' }}>
-      <div style={{ textAlign: 'center' }}><h2>Article View</h2></div>
+      <div style={{ textAlign: 'center' }}><h2>Recents Complaints</h2></div>
       <Divider /><br />
       <Modal show={show} onHide={handleClose} style={{zIndex:'9999'}}>
         <Modal.Header closeButton>
-          <Modal.Title>Delete Article</Modal.Title>
+          <Modal.Title>Delete Complaint</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Are You Sure? You want to delete this</Modal.Body>
+        <Modal.Body>Are You Sure? You want to delete this Complaint.</Modal.Body>
         <Modal.Footer>
           <Button variant="" onClick={handleClose}>
             Cancel
@@ -126,4 +126,4 @@ const ViewArticle = (props) => {
   );
 }
 
-export default ViewArticle;
+export default ViewComplaint;

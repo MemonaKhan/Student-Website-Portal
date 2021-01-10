@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
-import SideNavBar from "./SideNavBar";
+// import SideNavBar from "./SideNavBar";
 
-import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
+import {Button, Form } from 'react-bootstrap';
 
-import Image from './img/img_avatar.jpg';
+// import Image from './img/img_avatar.jpg';
 import ResultView from './ViewResult';
 import { Divider } from '@material-ui/core';
 

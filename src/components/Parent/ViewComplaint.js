@@ -3,10 +3,10 @@ import { MDBDataTable } from 'mdbreact';
 
 import Image from './img/letter.webp';
 
-import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
+import {Button,Modal } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
-import EditComplaint from './EditComplaint'
+// import EditComplaint from './EditComplaint'
 
 const ViewComplaint = (props) => {
   const { history } = props;
@@ -54,7 +54,7 @@ const ViewComplaint = (props) => {
     rows: [
       { 
         title: 'Regarding New Policy of Fee',
-        image: <img height="30%" width="60%" src={Image} />,
+        image: <img alt="image" height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
@@ -62,7 +62,7 @@ const ViewComplaint = (props) => {
       },
       {
         title: 'Regarding New Policy of Fee',
-        image: <img height="30%" width="60%" src={Image} />,
+        image: <img alt="image" height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
@@ -70,7 +70,7 @@ const ViewComplaint = (props) => {
       },
       {
         title: 'Regarding New Policy of Fee',
-        image: <img height="30%" width="60%" src={Image} />,
+        image: <img alt="image" height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
@@ -78,7 +78,7 @@ const ViewComplaint = (props) => {
       },
       {
         title: 'Regarding New Policy of Fee',
-        image: <img height="30%" width="60%" src={Image} />,
+        image: <img alt="image" height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
@@ -86,7 +86,7 @@ const ViewComplaint = (props) => {
       },
       {
         title: 'Regarding New Policy of Fee',
-        image: <img height="30%" width="60%" src={Image} />,
+        image: <img alt="image" height="30%" width="60%" src={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>

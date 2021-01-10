@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
-import { Button } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
 
@@ -15,8 +15,8 @@ const Announcements = (props) => {
         width: 150
       },
       {
-        label: 'Course',
-        field: 'course',
+        label: 'type',
+        field: 'type',
         sort: 'asc',
         width: 270
       },
@@ -36,7 +36,14 @@ const Announcements = (props) => {
     rows: [
       {
         date: '2011/04/25',
-        course: 'React',
+        type: 'React',
+        announcement: 'lorem Ipsum',
+        action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
+        <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+      },
+      {
+        date: '2011/04/25',
+        type: 'React',
         announcement: 'lorem Ipsum',
         action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
         <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
@@ -50,42 +57,35 @@ const Announcements = (props) => {
       },
       {
         date: '2011/04/25',
-        course: 'React',
+        type: 'React',
         announcement: 'lorem Ipsum',
         action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
         <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
       },
       {
         date: '2011/04/25',
-        course: 'React',
+        type: 'React',
         announcement: 'lorem Ipsum',
         action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
         <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
       },
       {
         date: '2011/04/25',
-        course: 'React',
+        type: 'React',
         announcement: 'lorem Ipsum',
         action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
         <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
       },
       {
         date: '2011/04/25',
-        course: 'React',
+        type: 'React',
         announcement: 'lorem Ipsum',
         action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
         <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
       },
       {
         date: '2011/04/25',
-        course: 'React',
-        announcement: 'lorem Ipsum',
-        action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
-      },
-      {
-        date: '2011/04/25',
-        course: 'React',
+        type: 'React',
         announcement: 'lorem Ipsum',
         action:<><Button variant="danger"  style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
         <Button variant="success"  style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
@@ -95,7 +95,7 @@ const Announcements = (props) => {
 
   return (
     <div  style={{ padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0', backgroundColor:'white' }}>
-      <div style={{ textAlign: 'center' }}><h2>All Announcements</h2></div>
+      <div style={{ textAlign: 'center' }}><h2>POST ANNOUNCEMENTS</h2></div>
                     <Divider /><br />
     <MDBDataTable style={{backgroundColor:'white'}}
       // striped

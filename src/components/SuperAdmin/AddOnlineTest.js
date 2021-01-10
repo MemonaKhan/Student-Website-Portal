@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
 
-import {  Button, Form } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 
-// import Image from './img/img_avatar.jpg';
+import Image from './img/img_avatar.jpg';
 
-// import { CKEditor } from '@ckeditor/ckeditor5-react';
-// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Divider } from '@material-ui/core';
 
 
-export class EditOnlineTest extends Component {
+export class AddOnlineTest extends Component {
     constructor(){
         super();
 
@@ -26,7 +26,7 @@ console.log(this.state.option);
 // console.log(this.state.option);
 const value = this.state.val;
 // const element = <p>{value}</p>;
-if(this.state.val!==''){
+if(this.state.val!=''){
 
     this.setState({
         option:[...this.state.option,value], 
@@ -85,4 +85,4 @@ else{
     }
 }
 
-export default EditOnlineTest;
+export default AddOnlineTest;

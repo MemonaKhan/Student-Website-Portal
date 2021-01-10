@@ -5,7 +5,8 @@ import TopBar from './TopBar';
 import Nav from './Nav';
 import KonnectSlider from './KonnectSlider';
 import Footer from './Footer';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../css/animate.css";
 import "../css/theme.css";

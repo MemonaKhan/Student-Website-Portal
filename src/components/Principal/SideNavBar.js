@@ -263,7 +263,7 @@ const SideNavBar = (props) => {
                         <FontAwesomeIcon icon={faLaughWink} style={{ color: '#5DC560', fontSize: '1.75em' }} />&nbsp;
                     PRINCIPAL DASHBOARD   
                     </Typography>
-                    <Button className="navdropdown" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>  Prof. Kanhaiyalal Nagpal  <img src={Img}/> </Button> 
+                    <Button className="navdropdown" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>  Prof. Kanhaiyalal Nagpal  <img alt="image" src={Img}/> </Button> 
                    
       <Menu
       style={{marginTop:'1.75em'}}

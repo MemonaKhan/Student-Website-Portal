@@ -3,17 +3,17 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
-import LiveHelpIcon from '@material-ui/icons/LiveHelp';
+// import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import SubjectIcon from '@material-ui/icons/Subject';
-import MenuIcon from "@material-ui/icons/Menu"
+// import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
 import DashboardIcon from '@material-ui/icons/Dashboard';
 
-import { makeStyles } from '@material-ui/core/styles';
-import {Paper, IconButton, Typography, Divider, List, ListItem, ListItemIcon, ListItemText, Collapse} from  "@material-ui/core"
-import clsx from 'clsx';
+// import { makeStyles } from '@material-ui/core/styles';
+import {IconButton, Divider, List, ListItem, ListItemIcon, ListItemText, Collapse} from  "@material-ui/core"
+// import clsx from 'clsx';
 import { withRouter} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "./images/logo.png"

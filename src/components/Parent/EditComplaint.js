@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
 
-import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
+// import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
+import {Button,Form } from 'react-bootstrap';
 
-import Image from './img/img_avatar.jpg';
+// import Image from './img/img_avatar.jpg';
 
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import { CKEditor } from '@ckeditor/ckeditor5-react';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Divider } from '@material-ui/core';
 
 import { Editor } from 'react-draft-wysiwyg';

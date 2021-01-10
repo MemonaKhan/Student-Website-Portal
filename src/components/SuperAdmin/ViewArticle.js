@@ -3,6 +3,7 @@ import { MDBDataTable } from 'mdbreact';
 
 import Image from './img/article.jpg';
 
+//import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
 import { Button, Modal } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
@@ -15,7 +16,7 @@ const ViewArticle = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/teacher/article/edit');
+    history.push('/principal/article/edit');
     // console.log(history.path);
   }
   const data = {
@@ -54,44 +55,15 @@ const ViewArticle = (props) => {
     rows: [
       { 
         title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
+        image: <img height="75%" width="75%" alt={Image} />,
         longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
         date: '11/18/2020 3:46:50 PM',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
           <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
       },
-      {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
-        longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
-        date: '11/18/2020 3:46:50 PM',
-        action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
-          <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
-      },
-      {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
-        longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
-        date: '11/18/2020 3:46:50 PM',
-        action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
-          <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
-      },
-      {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
-        longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
-        date: '11/18/2020 3:46:50 PM',
-        action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
-          <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
-      },
-      {
-        title: 'Digital Transformation In Companies',
-        image: <img height="75%" width="75%" src={Image} />,
-        longDesc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
-        date: '11/18/2020 3:46:50 PM',
-        action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
-          <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
-      },
+     
+
+     
     ]
   };
 

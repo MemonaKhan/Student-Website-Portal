@@ -1,6 +1,6 @@
 import React from 'react'
 import {Grid, Typography} from "@material-ui/core"
-import {withRouter, Link} from "react-router-dom"
+import {withRouter} from "react-router-dom"
 import Widget from "./Widget"
 
 

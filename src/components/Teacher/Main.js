@@ -23,7 +23,7 @@ import TResults from './Results';
 import TProfile from './Profile';
 
 
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+// import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 
 
@@ -31,7 +31,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './assets/css/style.css';
 
 // import './App.css';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {

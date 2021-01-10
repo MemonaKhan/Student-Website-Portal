@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
 
-import { Button, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
 
@@ -13,7 +13,7 @@ const ViewOnlineTest = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/teacher/onlinetest/edit');
+    history.push('/principal/onlinetest/edit');
     // console.log(history.path);
   }
   const data = {
@@ -158,7 +158,7 @@ const ViewOnlineTest = (props) => {
           <Button variant="" onClick={handleClose}>
             Cancel
           </Button>
-          <Button variant="success" onClick={()=>{handleEdit();handleClose()}}>
+          <Button variant="success" onClick={handleEdit}onClick={handleClose}>
             Confirm
           </Button>
         </Modal.Footer>

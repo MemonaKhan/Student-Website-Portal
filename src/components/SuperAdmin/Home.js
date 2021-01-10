@@ -27,7 +27,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="#" style={{backgroundColor:'#5DC560'}}>HOME</Button>
+                    <Button variant="success" href="/superAdmin/announcement" style={{backgroundColor:'#5DC560'}}>ANNOUNCEMENT</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -40,7 +40,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/article/add" style={{backgroundColor:'#5DC560'}}>ARTICLE</Button>
+                    <Button variant="success" href="/superAdmin/school/add" style={{backgroundColor:'#5DC560'}}>ADD SCHOOL</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -53,7 +53,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/courses" style={{backgroundColor:'#5DC560'}}>COURSE</Button>
+                    <Button variant="success" href="/superAdmin/event/add" style={{backgroundColor:'#5DC560'}}>EVENTS</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -66,7 +66,62 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/paymentform" style={{backgroundColor:'#5DC560'}}>PAYMENT</Button>
+                    <Button variant="success" href="/superAdmin/article/add" style={{backgroundColor:'#5DC560'}}>ARTICLE</Button>
+                    </center>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+            <br />
+            <Row md={3}>
+              <Col sm={6} md={3} className="cards">
+                <Card>
+                  <Card.Img variant="top" src={Image} />
+                  <Card.Body>
+                    <Card.Title></Card.Title>
+                    <Card.Text>
+                    </Card.Text>
+                    <center>
+                    <Button variant="success" href="/superAdmin/blog/add" style={{backgroundColor:'#5DC560'}}>BLOG</Button>
+                    </center>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col sm={6} md={3}>
+                <Card>
+                  <Card.Img variant="top" src={Image} />
+                  <Card.Body>
+                    <Card.Title></Card.Title>
+                    <Card.Text>
+                    </Card.Text>
+                    <center>
+                    <Button variant="success" href="/superAdmin/client/approval" style={{backgroundColor:'#5DC560'}}>CLIENT APPROVAL</Button>
+                    </center>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col sm={6} md={3}>
+                <Card>
+                  <Card.Img variant="top" src={Image} />
+                  <Card.Body>
+                    <Card.Title></Card.Title>
+                    <Card.Text>
+                    </Card.Text>
+                    <center>
+                    <Button variant="success" href="/superAdmin/school/approval" style={{backgroundColor:'#5DC560'}}>SCHOOL APPROVAL</Button>
+                    </center>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col sm={6} md={3}>
+                <Card>
+                  <Card.Img variant="top" src={Image} />
+                  <Card.Body>
+                    <Card.Title></Card.Title>
+                    <Card.Text>
+                    </Card.Text>
+                    <center>
+                    <Button variant="success" href="/superAdmin/course/approval" style={{backgroundColor:'#5DC560'}}>COURSE APPROVAL</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -82,7 +137,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/feedback/add" style={{backgroundColor:'#5DC560'}}>ADD FEEDBACK</Button>
+                    <Button variant="success" href="/superAdmin/test/add" style={{backgroundColor:'#5DC560'}}>TEST</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -95,7 +150,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/complain/add" style={{backgroundColor:'#5DC560'}}>ADD COMPLAIN</Button>
+                    <Button variant="success" href="/superAdmin/course/add" style={{backgroundColor:'#5DC560'}}>COURSE</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -108,7 +163,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/complain/view" style={{backgroundColor:'#5DC560'}}>COMPLAIN FORM</Button>
+                    <Button variant="success" href="/superAdmin/team/add" style={{backgroundColor:'#5DC560'}}>TEAM</Button>
                     </center>
                   </Card.Body>
                 </Card>
@@ -121,7 +176,7 @@ export class Home extends Component {
                     <Card.Text>
                     </Card.Text>
                     <center>
-                    <Button variant="success" href="/client/complain/detail" style={{backgroundColor:'#5DC560'}}>DETAIL COMPLAIN</Button>
+                    <Button variant="success" href="/superAdmin/ad/add" style={{backgroundColor:'#5DC560'}}>WEBSITE ADS</Button>
                     </center>
                   </Card.Body>
                 </Card>

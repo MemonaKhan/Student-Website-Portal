@@ -1,85 +1,101 @@
-import React from "react"
-import Sidebar from "./Sidebar"
-const AddArticle=()=>{
-    return(
-<>
+import React, { Component } from 'react'
+// import PropTypes from 'prop-types'
 
-<Sidebar/>
+import { Button, Form } from 'react-bootstrap';
 
+// import Image from './img/img_avatar.jpg';
 
+// import { CKEditor } from '@ckeditor/ckeditor5-react';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { Divider } from '@material-ui/core';
 
-<div ng-controller="headerCtrl">
-    <div class="container" style={{backgroundColor:"white" ,width:"80% "}}>
-        <h2 style={{color:"black", textAlign:"center"}}><b>ARTICLE FORM</b></h2>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <section>
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                    <div class="form-horizontal">
-                                        <hr />
-                                    </div>
+import { Editor } from 'react-draft-wysiwyg';
+import { EditorState } from 'draft-js';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
-                                    <div class="form-group">
-                              <label class="control-label col-md-4">ArticleType</label>
-                              <div class="col-md-12">
-                              <input type="option"></input>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                    <label class="control-label col-md-4">Title</label>
-                                    <div class="col-md-12">
-                                    <input class="form-control input-sm" placeholder="Enter Title"></input>
-                                           </div>
-                                    </div>
-                                    <div class="form-group">
-                                    <label class="control-label col-md-4">Image</label>
-                                    <div class="col-md-12">
-                                        <input type = "file" class = "form-control input-sm"></input>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                    <label class="control-label col-md-4">Short Description</label>
-                                    <div class="col-md-12">
-                                    <textarea class = "form-control input-sm" type="Text" placeholder="Enter Short Description"></textarea>  
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                    <label class="control-label col-md-4">Long Description</label>
-                                    <div class="col-md-12">
-                                    <textarea class = "form-control input-sm" type="Text" placeholder="Enter Long Description"></textarea>  
-                                     
-                                           
+export class AddArticle extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            editorState: EditorState.createEmpty(),
+        };
+    }
 
+    onEditorStateChange = (editorState) => {
+        this.setState({
+            editorState,
+        });
+    };
 
-                                        </div>
-                                    </div>
+    static propTypes = {}
 
+    render() {
+        const { editorState } = this.state;
+        return (
+            <>
+                <div style={{ padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0', backgroundColor: 'white', fontFamily: 'Times New Roman' }}>
+                    <div style={{ textAlign: 'center' }}><h2>Article Form</h2></div>
+                    <Divider /><br />
+                    <Form>
+                        <Form.Group controlId="articleType">
+                            <Form.Label>Article Type</Form.Label>
+                            <Form.Control as="select" required>
+                                <option>-- Select Article Type --</option>
+                                <option>Digital World</option>
+                                <option>Digital Marketing</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <Form.Group controlId="articleTitle">
+                            <Form.Label>Title</Form.Label>
+                            <Form.Control type="text" placeholder="Enter Title" required />
+                            <Form.Text className="text-muted">
+                            </Form.Text>
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.File id="articleImage" label="Image" />
+                        </Form.Group>
+                        <Form.Group controlId="articleShortDesc">
+                            <Form.Label>Short Description</Form.Label>
+                            <Form.Control as="textarea" rows={3} placeholder="Enter Short Description" required />
+                        </Form.Group>
+                        <Form.Group controlId="articleLongDesc">
+                            {/* <CKEditor
+                    editor={ ClassicEditor }
+                    data="<p>Enter Long Description</p>"
+                    onReady={ editor => {
+                        // You can store the "editor" and use when it is needed.
+                        console.log( 'Editor is ready to use!', editor );
+                    } }
+                    onChange={ ( event, editor ) => {
+                        const data = editor.getData();
+                        console.log( { event, editor, data } );
+                    } }
+                    onBlur={ ( event, editor ) => {
+                        console.log( 'Blur.', editor );
+                    } }
+                    onFocus={ ( event, editor ) => {
+                        console.log( 'Focus.', editor );
+                    } }
+                /> */}
+                            <Form.Label>Long Description</Form.Label>
 
-                                   
-
-
-                                    <div class="form-group ">
-                                        <div class="col-md-4">
-                                            <button type="submit" id ="btnSave" class="btn btn btn-success"> ADD </button>
-                                        </div>
-                                    </div>
-                                
-
-                            </div>
-                        </div>
-                    </section>
+                            <Editor
+                                editorState={editorState}
+                                toolbarClassName="toolbarClassName"
+                                wrapperClassName="wrapperClassName"
+                                editorClassName="editorClassName"
+                                wrapperStyle={{}}
+                                editorStyle={{border:'solid #C0C0C0 1px'}}
+                                toolbarStyle={{}}
+                                onEditorStateChange={this.onEditorStateChange}
+                            />
+                        </Form.Group>
+                        <Button variant="success" style={{ backgroundColor: '#5DC560' }} type="submit">Add </Button>
+                    </Form>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</>
-
-    )
+            </>
+        )
+    }
 }
-export default AddArticle
+
+export default AddArticle;

@@ -270,7 +270,7 @@ const Sidebar = (props) => {
                     </IconButton>
                     <Typography variant="h6" noWrap style={{ color: '#5DC560' }}>
                         <FontAwesomeIcon icon={faLaughWink} style={{ color: '#5DC560', fontSize: '1.75em' }} />&nbsp;
-                    TEACHER DASHBOARD
+                    SUPER ADMIN DASHBOARD
                     </Typography>
                     <Button className="navdropdown" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                         Prof. Kanhaiyalal Nagpal <img src={Img} />
@@ -320,7 +320,7 @@ const Sidebar = (props) => {
 
                     className={classes.listroot}
                 >
-                    <ListItem button key="Dashboard" onClick={() => { handleRoute('superAdmin/'); handleAll() }} >
+                    <ListItem button key="Dashboard" onClick={() => { handleRoute('/superAdmin/'); handleAll() }} >
 
                         <ListItemIcon>
                             <FontAwesomeIcon icon={faTachometerAlt} style={{ color: 'white', fontSize: '1.75em' }} />
@@ -329,13 +329,13 @@ const Sidebar = (props) => {
                         <ListItemText primary="Dashboard" />
                     </ListItem>
 
-                    <ListItem button key="Announcement" onClick={() => { handleRoute('superAdmin/announcement'); handleAll() }} >
+                    <ListItem button key="Announcement" onClick={() => { handleRoute('/superAdmin/announcement'); handleAll() }} >
 
                         <ListItemIcon>
                             <FontAwesomeIcon icon={faTable} style={{ color: 'white', fontSize: '1.75em' }} />
                             {/* <SendIcon /> */}
                         </ListItemIcon>
-                        <ListItemText primary="View Announcement" />
+                        <ListItemText primary="Announcements" />
                     </ListItem>
 
                     <ListItem button onClick={handleArticle}>
