@@ -13,6 +13,12 @@ import AddBlog from './AddBlog';
 import TypeBlog from './TypeBlog';
 import ViewBlog from './ViewBlog';
 import EditBlog from './EditBlog';
+import AddKidsStory from './AddKidsStory';
+import TypeKidsStory from './TypeKidsStory';
+import ViewKidsStory from './ViewKidsStory';
+import EditKidsStory from './EditKidsStory';
+import AddTips from './AddTips';
+import ViewTips from "./ViewTips";
 // import Courses from './Courses';
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
@@ -77,11 +83,12 @@ function Main() {
               <Route exact from="/superAdmin/blog/type" render={props => <TypeBlog {...props} />} />
               <Route exact from="/superAdmin/blog/view" render={props => <ViewBlog {...props} />} />
               <Route exact from="/superAdmin/blog/edit" render={props => <EditBlog {...props} />} />
-              <Route exact from="/superAdmin/story/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/story/type" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/story/view" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/tips/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/tips/view" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/story/add" render={props => <AddKidsStory {...props} />} />
+              <Route exact from="/superAdmin/story/type" render={props => <TypeKidsStory {...props} />} />
+              <Route exact from="/superAdmin/story/view" render={props => <ViewKidsStory {...props} />} />
+              <Route exact from="/superAdmin/story/edit" render={props => <EditKidsStory {...props} />} />
+              <Route exact from="/superAdmin/tips/add" render={props => <AddTips {...props} />} />
+              <Route exact from="/superAdmin/tips/view" render={props => <ViewTips {...props} />} />
               <Route exact from="/superAdmin/talent/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/talent/view" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/event/add" render={props => <Home {...props} />} />
