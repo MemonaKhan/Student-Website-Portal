@@ -45,6 +45,12 @@ import EditBOffer from './EditBOffer';
 import AddCourses from './AddCourse';
 import ViewCourses from './ViewCourses';
 import EditCourses from './EditCourse';
+import ViewCollaboration from "./ViewColl";
+import AddCollaboration from "./AddColl";
+import SComplain from './ViewSComplain'
+import SComplainReply from "./AddSComplain";
+import CComplain from './ViewCComplain'
+import CComplainReply from "./AddCComplain";
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
 // import ViewResults from "./ViewResult";
@@ -141,10 +147,12 @@ function Main() {
               <Route exact from="/superAdmin/course/add" render={props => <AddCourses {...props} />} />
               <Route exact from="/superAdmin/course/view" render={props => <ViewCourses {...props} />} />
               <Route exact from="/superAdmin/course/edit" render={props => <EditCourses {...props} />} />
-              <Route exact from="/superAdmin/collaboration/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/collaboration/view" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/complain/school" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/complain/client" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/collaboration/add" render={props => <AddCollaboration {...props} />} />
+              <Route exact from="/superAdmin/collaboration/view" render={props => <ViewCollaboration {...props} />} />
+              <Route exact from="/superAdmin/complain/school" render={props => <SComplain {...props} />} />
+              <Route exact from="/superAdmin/complain/school/reply" render={props => <SComplainReply {...props} />} />
+              <Route exact from="/superAdmin/complain/client" render={props => <CComplain {...props} />} />
+              <Route exact from="/superAdmin/complain/client/reply" render={props => <CComplainReply {...props} />} />
               <Route exact from="/superAdmin/dept/team/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/dept/adBoard/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/team/add" render={props => <Home {...props} />} />

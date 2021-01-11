@@ -13,7 +13,7 @@ import { Editor } from 'react-draft-wysiwyg';
 import { EditorState } from 'draft-js';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
-export class AddArticle extends Component {
+export class CourseDetail extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -98,4 +98,4 @@ export class AddArticle extends Component {
     }
 }
 
-export default AddArticle;
+export default CourseDetail;

@@ -85,11 +85,11 @@ const ViewCourses = (props) => {
 
   return (
     <div style={{ backgroundColor: 'white', padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0' }}>
-      <div style={{ textAlign: 'center' }}><h2>Article View</h2></div>
+      <div style={{ textAlign: 'center' }}><h2>Courses View</h2></div>
       <Divider /><br />
       <Modal show={show} onHide={handleClose} style={{zIndex:'9999'}}>
         <Modal.Header closeButton>
-          <Modal.Title>Delete Article</Modal.Title>
+          <Modal.Title>Delete Course</Modal.Title>
         </Modal.Header>
         <Modal.Body>Are You Sure? You want to delete this</Modal.Body>
         <Modal.Footer>
