@@ -436,7 +436,7 @@ const Sidebar = (props) => {
                             <FontAwesomeIcon icon={faCog} style={{ color: 'white', fontSize: '1.75em' }} />
                             {/* <InboxIcon /> */}
                         </ListItemIcon>
-                        <ListItemText primary="Technical Tipcs" />
+                        <ListItemText primary="Technical Tips" />
                         {openTips ? <ExpandLess /> : <ExpandMore />}
                     </ListItem>
                     <Collapse in={openTips} timeout="auto" unmountOnExit>
@@ -461,7 +461,7 @@ const Sidebar = (props) => {
                             <FontAwesomeIcon icon={faCog} style={{ color: 'white', fontSize: '1.75em' }} />
                             {/* <InboxIcon /> */}
                         </ListItemIcon>
-                        <ListItemText primary="Kid Talent" />
+                        <ListItemText primary="Kids Talent" />
                         {openTalent ? <ExpandLess /> : <ExpandMore />}
                     </ListItem>
                     <Collapse in={openTalent} timeout="auto" unmountOnExit>
