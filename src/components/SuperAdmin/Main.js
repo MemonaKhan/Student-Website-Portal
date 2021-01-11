@@ -19,6 +19,8 @@ import ViewKidsStory from './ViewKidsStory';
 import EditKidsStory from './EditKidsStory';
 import AddTips from './AddTips';
 import ViewTips from "./ViewTips";
+import AddTalent from './AddTalent';
+import ViewTalent from "./ViewTalent";
 // import Courses from './Courses';
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
@@ -89,8 +91,8 @@ function Main() {
               <Route exact from="/superAdmin/story/edit" render={props => <EditKidsStory {...props} />} />
               <Route exact from="/superAdmin/tips/add" render={props => <AddTips {...props} />} />
               <Route exact from="/superAdmin/tips/view" render={props => <ViewTips {...props} />} />
-              <Route exact from="/superAdmin/talent/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/talent/view" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/talent/add" render={props => <AddTalent {...props} />} />
+              <Route exact from="/superAdmin/talent/view" render={props => <ViewTalent {...props} />} />
               <Route exact from="/superAdmin/event/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/event/view" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/school/add" render={props => <Home {...props} />} />
