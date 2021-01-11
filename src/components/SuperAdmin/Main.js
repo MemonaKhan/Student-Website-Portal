@@ -5,6 +5,14 @@ import SideBar from './Sidebar'
 import Home from "./Home";
 import Profile from './Profile'
 import Announcement from './ViewAnnouncement';
+import AddArticle from './AddArticle';
+import TypeArticle from './TypeArticle';
+import ViewArticle from './ViewArticle';
+import EditArticle from './EditArticle';
+import AddBlog from './AddBlog';
+import TypeBlog from './TypeBlog';
+import ViewBlog from './ViewBlog';
+import EditBlog from './EditBlog';
 // import Courses from './Courses';
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
@@ -61,12 +69,14 @@ function Main() {
               <Route exact from="/superAdmin/" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/profile" render={props => <Profile {...props} />} />
               <Route exact from="/superAdmin/announcement" render={props => <Announcement {...props} />} />
-              <Route exact from="/superAdmin/article/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/article/type" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/article/view" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/blog/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/blog/type" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/blog/view" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/article/add" render={props => <AddArticle {...props} />} />
+              <Route exact from="/superAdmin/article/type" render={props => <TypeArticle {...props} />} />
+              <Route exact from="/superAdmin/article/view" render={props => <ViewArticle {...props} />} />
+              <Route exact from="/superAdmin/article/edit" render={props => <EditArticle {...props} />} />
+              <Route exact from="/superAdmin/blog/add" render={props => <AddBlog {...props} />} />
+              <Route exact from="/superAdmin/blog/type" render={props => <TypeBlog {...props} />} />
+              <Route exact from="/superAdmin/blog/view" render={props => <ViewBlog {...props} />} />
+              <Route exact from="/superAdmin/blog/edit" render={props => <EditBlog {...props} />} />
               <Route exact from="/superAdmin/story/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/story/type" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/story/view" render={props => <Home {...props} />} />
