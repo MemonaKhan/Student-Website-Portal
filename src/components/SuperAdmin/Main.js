@@ -38,7 +38,13 @@ import SchoolDetail from './SchoolDetail';
 import ArticleDetail from './ArticleDetail';
 import AddTest from './AddOnlineTest';
 import ViewTest from './ViewOnlineTest';
-// import Courses from './Courses';
+import AddBOffer from './AddBOffer';
+import TypeBOffer from './TypeBOffer';
+import ViewBOffer from './ViewBOffer';
+import EditBOffer from './EditBOffer';
+import AddCourses from './AddCourse';
+import ViewCourses from './ViewCourses';
+import EditCourses from './EditCourse';
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
 // import ViewResults from "./ViewResult";
@@ -128,11 +134,13 @@ function Main() {
               <Route exact from="/superAdmin/article/detail" render={props => <ArticleDetail {...props} />} />
               <Route exact from="/superAdmin/test/add" render={props => <AddTest {...props} />} />
               <Route exact from="/superAdmin/test/view" render={props => <ViewTest {...props} />} />
-              <Route exact from="/superAdmin/boffer/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/boffer/type" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/boffer/view" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/course/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/course/view" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/boffer/add" render={props => <AddBOffer {...props} />} />
+              <Route exact from="/superAdmin/boffer/type" render={props => <TypeBOffer {...props} />} />
+              <Route exact from="/superAdmin/boffer/view" render={props => <ViewBOffer {...props} />} />
+              <Route exact from="/superAdmin/boffer/edit" render={props => <EditBOffer {...props} />} />
+              <Route exact from="/superAdmin/course/add" render={props => <AddCourses {...props} />} />
+              <Route exact from="/superAdmin/course/view" render={props => <ViewCourses {...props} />} />
+              <Route exact from="/superAdmin/course/edit" render={props => <EditCourses {...props} />} />
               <Route exact from="/superAdmin/collaboration/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/collaboration/view" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/complain/school" render={props => <Home {...props} />} />
