@@ -27,6 +27,16 @@ import EditEvent from "./EditEvent";
 import AddSchool from './AddSchool';
 import ViewSchool from "./ViewSchool";
 import EditSchool from "./EditSchool";
+import AddQContext from './AddOnlineTest';
+import ViewQContext from './ViewOnlineTest';
+import ClientApproval from './ClientApproval';
+import SchoolApproval from './SchoolApproval';
+import CourseApproval from './CourseApproval';
+import ArticleApproval from './ArticleApproval';
+import ClientDetail from './ClientDetail';
+import SchoolDetail from './SchoolDetail';
+import CourseDetail from './CourseDetail';
+import ArticleDetail from './ArticleDetail';
 // import Courses from './Courses';
 // import MyCourses from './MyCourses';
 // import AddFeedback from './AddFeedback';
@@ -105,12 +115,16 @@ function Main() {
               <Route exact from="/superAdmin/school/add" render={props => <AddSchool {...props} />} />
               <Route exact from="/superAdmin/school/view" render={props => <ViewSchool {...props} />} />
               <Route exact from="/superAdmin/school/edit" render={props => <EditSchool {...props} />} />
-              <Route exact from="/superAdmin/context/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/context/view" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/client/approval" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/school/approval" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/course/approval" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/article/approval" render={props => <Home {...props} />} />
+              <Route exact from="/superAdmin/context/add" render={props => <AddQContext {...props} />} />
+              <Route exact from="/superAdmin/context/view" render={props => <ViewQContext {...props} />} />
+              <Route exact from="/superAdmin/client/approval" render={props => <ClientApproval {...props} />} />
+              <Route exact from="/superAdmin/school/approval" render={props => <SchoolApproval {...props} />} />
+              <Route exact from="/superAdmin/course/approval" render={props => <CourseApproval {...props} />} />
+              <Route exact from="/superAdmin/article/approval" render={props => <ArticleApproval {...props} />} />
+              <Route exact from="/superAdmin/client/detail" render={props => <ClientDetail {...props} />} />
+              <Route exact from="/superAdmin/school/detail" render={props => <SchoolDetail {...props} />} />
+              <Route exact from="/superAdmin/course/detail" render={props => <CourseDetail {...props} />} />
+              <Route exact from="/superAdmin/article/detail" render={props => <ArticleDetail {...props} />} />
               <Route exact from="/superAdmin/test/add" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/test/view" render={props => <Home {...props} />} />
               <Route exact from="/superAdmin/boffer/add" render={props => <Home {...props} />} />

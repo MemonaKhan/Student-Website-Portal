@@ -13,7 +13,7 @@ const ViewOnlineTest = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/principal/onlinetest/edit');
+    // history.push('/principal/onlinetest/edit');
     // console.log(history.path);
   }
   const data = {
@@ -31,30 +31,6 @@ const ViewOnlineTest = (props) => {
         width: 300
       },
       {
-        label: 'Option 1',
-        field: 'option1',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Option 2',
-        field: 'option2',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Option 3',
-        field: 'option3',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Option 4',
-        field: 'option4',
-        sort: 'asc',
-        width: 100
-      },
-      {
         label: 'Action',
         field: 'action',
         width: 100
@@ -68,8 +44,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -78,8 +53,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -88,8 +62,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -98,8 +71,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -108,8 +80,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -118,8 +89,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -128,8 +98,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       {
         course: 'React',
@@ -138,8 +107,7 @@ const ViewOnlineTest = (props) => {
         option2: 'C Library',
         option3: 'JS Framework',
         option4: 'Python Framework',
-        action:<><Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-        <Button variant="success" onClick={handleEdit} style={{backgroundColor:'#5DC560'}} type="submit">Edit </Button></>,
+        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       
     ]
@@ -147,11 +115,11 @@ const ViewOnlineTest = (props) => {
 
   return (
     <div  style={{ padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0', backgroundColor:'white' }}>
-      <div style={{ textAlign: 'center' }}><h2>Online test View</h2></div>
+      <div style={{ textAlign: 'center' }}><h2>Quiz Context View</h2></div>
                     <Divider /><br />
                     <Modal show={show} onHide={handleClose} style={{zIndex:'9999'}}>
         <Modal.Header closeButton>
-          <Modal.Title>Delete Online Test</Modal.Title>
+          <Modal.Title>Delete Quiz Context</Modal.Title>
         </Modal.Header>
         <Modal.Body>Are You Sure? You want to delete this</Modal.Body>
         <Modal.Footer>
