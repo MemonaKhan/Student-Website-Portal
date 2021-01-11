@@ -25,8 +25,14 @@ const ViewOnlineTest = (props) => {
         width: 150
       },
       {
-        label: 'Question',
-        field: 'question',
+        label: 'Date',
+        field: 'date',
+        sort: 'asc',
+        width: 300
+      },
+      {
+        label: 'Duration',
+        field: 'duration',
         sort: 'asc',
         width: 300
       },
@@ -39,74 +45,8 @@ const ViewOnlineTest = (props) => {
     rows: [
       {
         course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
-        action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
-      },
-      {
-        course: 'React',
-        question: 'What is React',
-        option1: 'JS Library',
-        option2: 'C Library',
-        option3: 'JS Framework',
-        option4: 'Python Framework',
+        date:'12/4/2000',
+        duration:'1hr',
         action:<Button variant="danger" onClick={handleShow} style={{backgroundColor:'#e74a3b'}} type="submit">Delete </Button>
       },
       

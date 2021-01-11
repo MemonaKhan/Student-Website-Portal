@@ -570,25 +570,25 @@ const Sidebar = (props) => {
                                 <ListItemIcon>
                                     <StarBorder />
                                 </ListItemIcon>
-                                <ListItemText primary="Add" />
+                                <ListItemText primary="Client Approval" />
                             </ListItem>
                             <ListItem button key="SchoolApproval" onClick={() => { handleRoute('/superAdmin/school/approval'); handleAll() }} className={classes.nested}>
                                 <ListItemIcon>
                                     <StarBorder />
                                 </ListItemIcon>
-                                <ListItemText primary="Add" />
+                                <ListItemText primary="School Approval" />
                             </ListItem>
                             <ListItem button key="CourseApproval" onClick={() => { handleRoute('/superAdmin/course/approval'); handleAll() }} className={classes.nested}>
                                 <ListItemIcon>
                                     <StarBorder />
                                 </ListItemIcon>
-                                <ListItemText primary="Add" />
+                                <ListItemText primary="Course Approval" />
                             </ListItem>
                             <ListItem button key="ArticleApproval" onClick={() => { handleRoute('/superAdmin/article/approval'); handleAll() }} className={classes.nested}>
                                 <ListItemIcon>
                                     <StarBorder />
                                 </ListItemIcon>
-                                <ListItemText primary="View" />
+                                <ListItemText primary="Article Approval" />
                             </ListItem>
                         </List>
                     </Collapse>

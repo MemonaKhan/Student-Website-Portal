@@ -9,27 +9,27 @@ import { Divider } from '@material-ui/core';
 
 // import EditArticle from './EditArticle'
 
-const ViewEvent = (props) => {
+const ArticleApproval = (props) => {
   const { history } = props;
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/superAdmin/event/edit');
+    history.push('/superAdmin/article/detail');
     // console.log(history.path);
   }
   const data = {
-    columns: [
+      columns: [
+        {
+          label: 'Date',
+          field: 'date',
+          sort: 'asc',
+          width: 100
+        },
       {
-        label: 'Title',
+        label: 'Article Title',
         field: 'title',
-        sort: 'asc',
-        width: 150
-      },
-      {
-        label: 'Venue',
-        field: 'venue',
         sort: 'asc',
         width: 150
       },
@@ -37,43 +37,7 @@ const ViewEvent = (props) => {
         label: 'Description',
         field: 'desc',
         sort: 'asc',
-        width: 150
-      },
-      {
-        label: 'Image',
-        field: 'image',
-        sort: 'asc',
-        width: 270
-      },
-      {
-        label: 'Video',
-        field: 'video',
-        sort: 'asc',
         width: 200
-      },
-      {
-        label: 'Start Date',
-        field: 'sdate',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'End Date',
-        field: 'edate',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Start Time',
-        field: 'stime',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'End Time',
-        field: 'etime',
-        sort: 'asc',
-        width: 100
       },
       {
         label: 'Action',
@@ -84,17 +48,10 @@ const ViewEvent = (props) => {
     ],
     rows: [
       { 
-        title: 'Lorem ipsum',
-        venue: 'Lorem ipsum',
-        desc: 'Lorem ipsum',
-        image: <img height="75%" width="75%" alt={Image} />,
-        video: 'Lorem ipsum',
-        sdate: '11/18/2020',
-        edate: '11/18/2020',
-        stime: '3:46:50 PM',
-        etime: '3:46:50 PM',
-        action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
-          <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
+        date: '11/18/2020 3:46:50 PM',
+        title: 'Digital Transformation In Companies',
+        desc: 'If necessity is the mother of invention,&nbsp;coronavirus (COVID-19) forced many rounds the sector to rethink our every day lives from paintings to high school to amusement.',
+        action: <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Detail </Button>,
       },
      
 
@@ -105,22 +62,8 @@ const ViewEvent = (props) => {
 
   return (
     <div style={{ backgroundColor: 'white', padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0' }}>
-      <div style={{ textAlign: 'center' }}><h2>Event View</h2></div>
+      <div style={{ textAlign: 'center' }}><h2>Approval Article View</h2></div>
       <Divider /><br />
-      <Modal show={show} onHide={handleClose} style={{zIndex:'9999'}}>
-        <Modal.Header closeButton>
-          <Modal.Title>Delete Event</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Are You Sure? You want to delete this</Modal.Body>
-        <Modal.Footer>
-          <Button variant="" onClick={handleClose}>
-            Cancel
-          </Button>
-          <Button variant="success" onClick={handleClose}>
-            Confirm
-          </Button>
-        </Modal.Footer>
-      </Modal>
       <MDBDataTable style={{ backgroundColor: 'white' }}
         // striped
         // bordered
@@ -133,4 +76,4 @@ const ViewEvent = (props) => {
   );
 }
 
-export default ViewEvent;
+export default ArticleApproval;
