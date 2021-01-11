@@ -9,33 +9,21 @@ import { Divider } from '@material-ui/core';
 
 // import EditArticle from './EditArticle'
 
-const ViewEvent = (props) => {
+const ViewSchool = (props) => {
   const { history } = props;
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleEdit = () =>{
-    history.push('/superAdmin/event/edit');
+    history.push('/superAdmin/school/edit');
     // console.log(history.path);
   }
   const data = {
     columns: [
       {
-        label: 'Title',
-        field: 'title',
-        sort: 'asc',
-        width: 150
-      },
-      {
-        label: 'Venue',
-        field: 'venue',
-        sort: 'asc',
-        width: 150
-      },
-      {
-        label: 'Description',
-        field: 'desc',
+        label: 'Name',
+        field: 'name',
         sort: 'asc',
         width: 150
       },
@@ -46,32 +34,20 @@ const ViewEvent = (props) => {
         width: 270
       },
       {
-        label: 'Video',
-        field: 'video',
+        label: 'Address',
+        field: 'address',
         sort: 'asc',
         width: 200
       },
       {
-        label: 'Start Date',
-        field: 'sdate',
+        label: 'Email',
+        field: 'email',
         sort: 'asc',
         width: 100
       },
       {
-        label: 'End Date',
-        field: 'edate',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Start Time',
-        field: 'stime',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'End Time',
-        field: 'etime',
+        label: 'Contact',
+        field: 'contact',
         sort: 'asc',
         width: 100
       },
@@ -84,15 +60,11 @@ const ViewEvent = (props) => {
     ],
     rows: [
       { 
-        title: 'Lorem ipsum',
-        venue: 'Lorem ipsum',
-        desc: 'Lorem ipsum',
+        name: 'Lorem ipsum',
         image: <img height="75%" width="75%" alt={Image} />,
-        video: 'Lorem ipsum',
-        sdate: '11/18/2020',
-        edate: '11/18/2020',
-        stime: '3:46:50 PM',
-        etime: '3:46:50 PM',
+        address: 'Lorem ipsum',
+        email: 'lorem@ipsum.com',
+        contact: '03123456789',
         action: <><Button variant="danger" onClick={handleShow} style={{ backgroundColor: '#e74a3b' }} type="submit">Delete </Button>
           <Button variant="success" onClick={handleEdit} style={{ backgroundColor: '#5DC560' }} type="submit">Edit </Button></>,
       },
@@ -133,4 +105,4 @@ const ViewEvent = (props) => {
   );
 }
 
-export default ViewEvent;
+export default ViewSchool;
