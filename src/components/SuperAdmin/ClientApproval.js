@@ -1,10 +1,10 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
 
-import Image from './img/article.jpg';
+// import Image from './img/article.jpg';
 
 //import { Container, Row, Col, Card, Button, Form, Modal } from 'react-bootstrap';
-import { Button, Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 
 // import EditArticle from './EditArticle'

@@ -9,7 +9,7 @@ import { Button, Form } from 'react-bootstrap';
 // import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Divider } from '@material-ui/core';
 
-import { Editor } from 'react-draft-wysiwyg';
+// import { Editor } from 'react-draft-wysiwyg';
 import { EditorState } from 'draft-js';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
@@ -30,7 +30,7 @@ export class AddDptAdBoard extends Component {
     static propTypes = {}
 
     render() {
-        const { editorState } = this.state;
+        // const { editorState } = this.state;
         return (
             <>
                 <div style={{ padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0', backgroundColor: 'white', fontFamily: 'Times New Roman' }}>

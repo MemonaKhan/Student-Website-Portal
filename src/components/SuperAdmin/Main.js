@@ -59,8 +59,10 @@ import EditTeam from './EditTeam';
 import AddAdBoard from './AddAdBoard';
 import ViewAdBoard from './ViewAdBoard';
 import EditAdBoard from './EditAdBoard';
-
 import ClientFeedback from "./ClientFeedback";
+import AddWebAd from './AddWebAd';
+import ViewWebAd from './ViewWebAd';
+import EditWebAd from './EditWebAd';
 
 
 // import { Container, Row, Col, Card, Button } from 'react-bootstrap';
@@ -162,9 +164,9 @@ function Main() {
               <Route exact from="/superAdmin/adBoard/view" render={props => <ViewAdBoard {...props} />} />
               <Route exact from="/superAdmin/adBoard/edit" render={props => <EditAdBoard {...props} />} />
               <Route exact from="/superAdmin/clientfeedback" render={props => <ClientFeedback {...props} />} />
-              <Route exact from="/superAdmin/ad/add" render={props => <Home {...props} />} />
-              <Route exact from="/superAdmin/ad/view" render={props => <Home {...props} />} />
-              {/* <Route exact from="/superAdmin/" render={props => <Home {...props} />} /> */}
+              <Route exact from="/superAdmin/ad/add" render={props => <AddWebAd {...props} />} />
+              <Route exact from="/superAdmin/ad/view" render={props => <ViewWebAd {...props} />} />
+              <Route exact from="/superAdmin/ad/edit" render={props => <EditWebAd {...props} />} />
               
             </Switch>
           </main>

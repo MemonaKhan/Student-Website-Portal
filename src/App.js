@@ -5,8 +5,8 @@ import Parent from './components/Parent/Main';
 import Client from './components/Client/Main';
 import Principal from './components/Principal/Main';
 import Student from './components/Student/dashboard/dashboard';
-// import Home from './components/Home/Main';
-// import ClientHome from './components/ClientHome/App';
+import Home from './components/Home/Main';
+import ClientHome from './components/ClientHome/App';
 import SuperAdmin from './components/SuperAdmin/Main';
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
 
         {/* <div className={classes.root}> */}
             <Switch>
-              {/* <Route exact from="/" render={props => <Home {...props} />} />
-              <Route from="/clientHome" render={props => <ClientHome {...props} />} /> */}
+              <Route exact from="/" render={props => <Home {...props} />} />
+              <Route from="/clientHome" render={props => <ClientHome {...props} />} />
               <Route from="/superAdmin" render={props => <SuperAdmin {...props} />} />
               <Route from="/teacher" render={props => <Teacher {...props} />} />
               <Route from="/client" render={props => <Client {...props} />} />

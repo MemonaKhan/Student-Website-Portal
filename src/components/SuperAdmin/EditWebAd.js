@@ -13,7 +13,7 @@ import { Divider } from '@material-ui/core';
 import { EditorState } from 'draft-js';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
-export class TypeBOffer extends Component {
+export class EditWebAd extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,16 +34,20 @@ export class TypeBOffer extends Component {
         return (
             <>
                 <div style={{ padding: '5%', boxShadow: '0 0 5px 2px #C0C0C0', backgroundColor: 'white', fontFamily: 'Times New Roman' }}>
-                    <div style={{ textAlign: 'center' }}><h2>Business Offer Type</h2></div>
+                    <div style={{ textAlign: 'center' }}><h2>Edit Website Ad Form</h2></div>
                     <Divider /><br />
                     <Form>
-                        <Form.Group controlId="type">
-                            <Form.Label>Type</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Type" required />
+                        <Form.Group controlId="link">
+                            <Form.Label>Link</Form.Label>
+                            <Form.Control type="text" placeholder="Enter Link" required />
                             <Form.Text className="text-muted">
                             </Form.Text>
                         </Form.Group>
-                        <Button variant="success" style={{ backgroundColor: '#5DC560' }} type="submit">Add </Button>
+                        <Form.Group>
+                            <Form.File id="image" label="Image" />
+                        </Form.Group>
+                        
+                        <Button variant="success" style={{ backgroundColor: '#5DC560' }} type="submit">Update </Button>
                     </Form>
                 </div>
             </>
@@ -51,4 +55,4 @@ export class TypeBOffer extends Component {
     }
 }
 
-export default TypeBOffer;
+export default EditWebAd;
